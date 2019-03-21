@@ -1,0 +1,39 @@
+{
+  "name": "react-basic-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "db.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "stage-2"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "scripts": {
+    "serve": "node server",
+    "serve:dev": "nodemon server --ignore src/ --ignore public/ --ignore dist/",
+    "bundle": "webpack",
+    "bundle:dev": "npm run bundle -- --mode=development --watch",
+    "start:dev": "npm run bundle:dev & npm run serve:dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
